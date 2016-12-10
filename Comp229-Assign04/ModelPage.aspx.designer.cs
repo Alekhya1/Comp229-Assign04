@@ -10,25 +10,34 @@
 namespace Comp229_Assign04 {
     
     
-    public partial class About {
+    public partial class ModelPage {
         
         /// <summary>
-        /// Naiser control.
+        /// image control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage Naiser;
+        protected global::System.Web.UI.WebControls.Image image;
         
         /// <summary>
-        /// name control.
+        /// gamename control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label name;
+        protected global::System.Web.UI.WebControls.Label gamename;
+        
+        /// <summary>
+        /// UnionWorker control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label UnionWorker;
         
         /// <summary>
         /// faction control.
@@ -49,13 +58,13 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label rank;
         
         /// <summary>
-        /// _base control.
+        /// base1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label _base;
+        protected global::System.Web.UI.WebControls.Label base1;
         
         /// <summary>
         /// size control.
@@ -67,13 +76,13 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label size;
         
         /// <summary>
-        /// deploymentzone control.
+        /// deploymentZone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label deploymentzone;
+        protected global::System.Web.UI.WebControls.Label deploymentZone;
         
         /// <summary>
         /// traits control.
@@ -82,34 +91,25 @@ namespace Comp229_Assign04 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label traits;
+        protected global::System.Web.UI.WebControls.Repeater traits;
         
         /// <summary>
-        /// traitsrepeat control.
+        /// types control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater traitsrepeat;
+        protected global::System.Web.UI.WebControls.Repeater types;
         
         /// <summary>
-        /// repeattypes control.
+        /// defenseChart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeattypes;
-        
-        /// <summary>
-        /// repeatdefensechart control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeatdefensechart;
+        protected global::System.Web.UI.WebControls.Repeater defenseChart;
         
         /// <summary>
         /// mobility control.
@@ -148,30 +148,30 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label wounds;
         
         /// <summary>
-        /// repeatActions control.
+        /// actions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeatActions;
+        protected global::System.Web.UI.WebControls.Repeater actions;
         
         /// <summary>
-        /// repeatSpecialAbilities control.
+        /// specialAbilities control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeatSpecialAbilities;
+        protected global::System.Web.UI.WebControls.Repeater specialAbilities;
         
         /// <summary>
-        /// UpdateModel control.
+        /// update control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink UpdateModel;
+        protected global::System.Web.UI.WebControls.Button update;
     }
 }

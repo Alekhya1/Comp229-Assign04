@@ -10,13 +10,15 @@ using System.IO;
 
 namespace Comp229_Assign04
 {
-    public partial class _HomePage : Page
+    public partial class HomePage : Page
     {
-        private object modelsRepeater;
-
-        protected void Page_Load(object sender, EventArgs e)
+                protected void Page_Load(object sender, EventArgs e)
         {
-            List<Result> _model = JsonConvert.DeserializeObject<List<Result>>(File.ReadAllText(@"C:\Users\monica\Desktop\Assign04.json"));
+
+            GameRepeater.DataSource = Global.Models;
+            GameRepeater.DataBind();
+           
+           
 
             
         }
@@ -37,7 +39,8 @@ namespace Comp229_Assign04
             public Action[] actions { get; set; }
             public Specialability[] specialAbilities { get; set; }
             public string imageUrl { get; set; }
-        }
+        public object Gamelink { get; private set; }
+    }
 
         public class Action
         {

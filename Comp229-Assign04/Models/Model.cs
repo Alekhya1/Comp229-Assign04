@@ -5,14 +5,14 @@ using System.Web;
 
 namespace Comp229_Assign04.Models
 {
-    public class Class1
+    public class Model
     {
         public class Rootobject
         {
-            public Class1[] Property1 { get; set; }
+            public Model[] Property1 { get; set; }
         }
 
-        public class _Models
+        public class class1
         {
             public string name { get; set; }
             public string faction { get; set; }

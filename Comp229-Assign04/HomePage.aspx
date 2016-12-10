@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Comp229_Assign04._HomePage" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Comp229_Assign04.HomePage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
   
@@ -25,41 +25,20 @@
         <br ><p>House Of Goritsi</p><button id="Goritsi" width="200" runat="server"> <img src="Assets/Goritsi.jpg" Width="200" /><br /></button>
 
          <div class="col-sm-0">   
-             <h2>Game Result</h2></div>
-                        
-        name:       <asp:Label ID="nameLabel" runat="server"
-                            Text='' /><br />
-        factionName:     <asp:Label ID="factionLabel" runat="server"
-                            Text='' /><br />
-        rank:      <asp:Label ID="rankLabel" runat="server"
-                            Text='' /><br />
-        _base:      <asp:Label ID="_baseLabel" runat="server"
-                            Text=''/><br />
-        size: <asp:Label ID="sizeLabel" runat="server"
-                            Text='' /><br />
-        deploymentZone:       <asp:Label ID="deploymentZoneLabel" runat="server"
-                            Text='' /><br />
-        traits:    <asp:Label ID="traitsLabel" runat="server"
-                            Text='' /><br />
-        types:    <asp:Label ID="typesLabel" runat="server"
-                            Text='' /><br />
-        defenseChart:    <asp:Label ID="defenseChartLabel" runat="server"
-                            Text='' /><br />
-        mobility:    <asp:Label ID="mobilityLabel" runat="server"
-                            Text='' /><br />
-        willpower:    <asp:Label ID="willpowerLabel" runat="server"
-                            Text='' /><br />
-        resiliance:    <asp:Label ID="resilianceLabel" runat="server"
-                            Text='' /><br />
-        wounds:    <asp:Label ID="woundsLabel" runat="server"
-                            Text='' /><br />
-        actions:    <asp:Label ID="actionsLabel" runat="server"
-                            Text='' /><br />
-        specialAbilities:    <asp:Label ID="specialAbilitiesLabel" runat="server"
-                            Text='' /><br />
-        imageUrl:    <asp:Label ID="imageUrlLabel" runat="server" 
-                            Text='' />
-        
+             <asp:Repeater ID="GameRepeater" runat="server" >
+                 <ItemTemplate>
+                     
+
+                     <asp:HyperLink ID="linkgame" runat="server" Text='<%#Eval("name") %>'
+                          NavigateUrl=<%# Eval("name", "~/ModelPage.aspx?ID={0}") %> />
+                     
+
+
+                                          </ItemTemplate>
+                 
+             </asp:Repeater>
+            </div>
+                     
    
 </asp:Content>
             
