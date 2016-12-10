@@ -4,48 +4,47 @@
     <table>
         <tr>
             <td>
-                <img id="Naiser" src='<%# String.Format("/Assets/{0}.jpg", Eval("name"))%>' runat="server" class="ImageWidth" />
+                <img id="Naiser" src='<%# String.Format("/Assets/{0}.jpg", "name")%>' runat="server" class="ImageWidth" />
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="name" runat="server" Text="Name" Font-Bold="true"></asp:Label>
-                <asp:Label ID="namelabel" runat="server"></asp:Label>
-            </td>
+                            </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="faction" runat="server" Text="Faction"></asp:Label>
-                <asp:Label ID="factionlabel" runat="server"></asp:Label>
+                
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="rank" runat="server" Text="Rank"></asp:Label>
-                <asp:Label ID="ranklabel" runat="server"></asp:Label>
+                
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="_base" runat="server" Text="_Base"></asp:Label>
-                <asp:Label ID="baselabel" runat="server"></asp:Label>
+             
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="size" runat="server" Text="_Size"></asp:Label>
-                <asp:Label ID="sizelabel" runat="server"></asp:Label>
+                
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="deploymentzone" runat="server" Text="DeploymentZone"></asp:Label>
-                <asp:Label ID="deploymentzonelabel" runat="server"></asp:Label>
+                
             </td>
         </tr>
         <tr>
             <td><asp:Label ID="traits" runat="server" Text="traits"></asp:Label>
-                <asp:Label ID="traitslabel" runat="server"></asp:Label></td>
+                </td>
             <td>
                 <table>
                     <asp:Repeater runat="server" ID="traitsrepeat">
@@ -96,25 +95,24 @@
         <tr>
             <td>
                 <asp:Label ID="mobility" runat="server" Text="mobility"></asp:Label>
-                <asp:Label ID="LabelMobility" runat="server"></asp:Label>
-            </td>
+                            </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="willpower" runat="server" Text="WillPower"></asp:Label>
-                <asp:Label ID="LabelWillPower" runat="server"></asp:Label>
+               
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="resiliance" runat="server" Text="Resiliance"></asp:Label>
-                <asp:Label ID="labelresiliance" runat="server"></asp:Label>
+                
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="wounds" runat="server" Text="Wounds"></asp:Label>
-                <asp:Label ID="labelWounds" runat="server"></asp:Label>
+                
             </td>
         </tr>
 
@@ -198,7 +196,7 @@
 </asp:Content>
 
 
-<%--"name":"Union Worker",
+        "name":"Union Worker",
 		"faction":"Teknes",
 		"rank":1,
 		"base":3,
@@ -223,5 +221,5 @@
 			{
 				"name":"Pain Fulled",
 				"description":"While this model has 1 or more damage on it, it gains [+1] Mobility, and its melee attacks gain Unstoppable(1) and [+1] Rating."
-			}--%>
+			}
 </asp:Content>

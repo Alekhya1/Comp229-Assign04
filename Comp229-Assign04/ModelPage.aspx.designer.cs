@@ -31,15 +31,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label name;
         
         /// <summary>
-        /// namelabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label namelabel;
-        
-        /// <summary>
         /// faction control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label faction;
-        
-        /// <summary>
-        /// factionlabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label factionlabel;
         
         /// <summary>
         /// rank control.
@@ -67,15 +49,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label rank;
         
         /// <summary>
-        /// ranklabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ranklabel;
-        
-        /// <summary>
         /// _base control.
         /// </summary>
         /// <remarks>
@@ -83,15 +56,6 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label _base;
-        
-        /// <summary>
-        /// baselabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label baselabel;
         
         /// <summary>
         /// size control.
@@ -103,15 +67,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label size;
         
         /// <summary>
-        /// sizelabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label sizelabel;
-        
-        /// <summary>
         /// deploymentzone control.
         /// </summary>
         /// <remarks>
@@ -121,15 +76,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label deploymentzone;
         
         /// <summary>
-        /// deploymentzonelabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label deploymentzonelabel;
-        
-        /// <summary>
         /// traits control.
         /// </summary>
         /// <remarks>
@@ -137,15 +83,6 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label traits;
-        
-        /// <summary>
-        /// traitslabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label traitslabel;
         
         /// <summary>
         /// traitsrepeat control.
@@ -184,15 +121,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label mobility;
         
         /// <summary>
-        /// LabelMobility control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelMobility;
-        
-        /// <summary>
         /// willpower control.
         /// </summary>
         /// <remarks>
@@ -200,15 +128,6 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label willpower;
-        
-        /// <summary>
-        /// LabelWillPower control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelWillPower;
         
         /// <summary>
         /// resiliance control.
@@ -220,15 +139,6 @@ namespace Comp229_Assign04 {
         protected global::System.Web.UI.WebControls.Label resiliance;
         
         /// <summary>
-        /// labelresiliance control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelresiliance;
-        
-        /// <summary>
         /// wounds control.
         /// </summary>
         /// <remarks>
@@ -236,15 +146,6 @@ namespace Comp229_Assign04 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label wounds;
-        
-        /// <summary>
-        /// labelWounds control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelWounds;
         
         /// <summary>
         /// repeatActions control.

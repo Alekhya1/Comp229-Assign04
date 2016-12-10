@@ -9,55 +9,72 @@ namespace Comp229_Assign04
 {
     public partial class ModelPage : Page
     {
-        public object labelname { get; private set; }
+        private object faction;
+        private object _Model;
+        private object wounds;
+        private object repeatActions;
+        private object repeatSpecialAbilities;
+        private object resilianceValue;
+        private object willpower;
+        private object mobility;
+        private object repeatDefenseChart;
+        private object repeatTypes;
+        private object repeatTraits;
+        private object deploymentzone;
+        private object rank;
+        private object _base;
+        private object size;
+
+        public object name { get; private set; }
         public object LblWoundsValue { get; private set; }
+        public object ImgGame { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            UpdateModel.NavigateUrl = String.Format("~/UpdateModel.aspx?");
+            UpdateModel.NavigateUrl = String.Format("~/UpdatePage.aspx?");
             var name = Request.QueryString["name"];
             var faction = Request.QueryString["faction"];
 
             if (string.IsNullOrEmpty(name))
             {
-                Response.Redirect("~/Default.aspx");
+                Response.Redirect("~/HomePage.aspx");
                 return;
             }
-            _Model = Global.Models.FirstOrDefault(tModel => tModel.name == name && tModel.faction == faction);
+            _Model = Global.Models.First(tModel => tModel.name == name && tModel.faction == faction);
             SetBindings();
         }
 
         private void SetBindings()
         {
-            //ImgGame.ImageUrl = _Model.imageURL;
-            labelname.Text = _Model.name;
-            LblFactionValue.Text = _Model.faction;
-            LblRankValue.Text = _Model.rank.ToString();
-            LblBaseValue.Text = _Model._base + "mm";
-            LblSizeValue.Text = _Model.size.ToString();
-            LblDeploymentZoneValue.Text = _Model.deploymentZone.ToString();
+           
+            name.Text = _Model.name;
+            faction.Text = _Model.faction;
+            rank.Text = _Model.rank.ToString();
+            _base.Text = _Model._base + "mm";
+            size.Text = _Model.size.ToString();
+            deploymentzone.Text = _Model.deploymentZone.ToString();
 
-            rptTraits.DataSource = _Model.traits;
-            rptTraits.DataBind();
+            repeatTraits.DataSource = _Model.traits;
+            repeatTraits.DataBind();
 
-            rptTypes.DataSource = _Model.types;
-            rptTypes.DataBind();
+            repeatTypes.DataSource = _Model.types;
+            repeatTypes.DataBind();
 
-            rptDefenseChart.DataSource = _Model.defenseChart;
-            rptDefenseChart.DataBind();
+            repeatDefenseChart.DataSource = _Model.defenseChart;
+            repeatDefenseChart.DataBind();
 
-            LblMobilityValue.Text = _Model.mobility.ToString();
-            LblWillPowerValue.Text = _Model.willpower.ToString();
-            LblResilianceValue.Text = _Model.resiliance.ToString();
-            LblWoundsValue.Text = _Model.wounds.ToString();
+            mobility.Text = _Model.mobility.ToString();
+           willpower.Text = _Model.willpower.ToString();
+            resilianceValue.Text = _Model.resiliance.ToString();
+            wounds.Text = _Model.wounds.ToString();
 
-            rptActions.DataSource = _Model.actions;
-            rptActions.DataBind();
+            repeatActions.DataSource = _Model.Actions;
+            repeatActions.DataBind();
 
-            rptSpecialAbilities.DataSource = _Model.specialAbilities;
-            rptSpecialAbilities.DataBind();
+            repeatSpecialAbilities.DataSource = _Model.specialAbilities;
+            repeatSpecialAbilities.DataBind();
 
-            ImgGame.Src = _Model.imageUrl;
+            
         }
     }
 }
