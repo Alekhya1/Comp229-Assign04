@@ -30,7 +30,7 @@ namespace Comp229_Assign04
             _Model.name = Gamename.Text;
             _Model.faction = Gamename.Text;
             Global.updateNewJsonFile();
-
+            Global.EmailJsonFile();
             Response.Redirect("~/HomePage.aspx");
         }
     }

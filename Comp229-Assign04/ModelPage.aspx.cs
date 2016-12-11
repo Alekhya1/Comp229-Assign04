@@ -16,7 +16,7 @@ namespace Comp229_Assign04
         {
            string name= Request.QueryString["ID"];
 
-            if (name.Equals(" "))
+            if (name.Equals("ModelPage"))
             {
                 Response.Redirect("~/HomePage.aspx");
                
